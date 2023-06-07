@@ -1,0 +1,102 @@
+.tours {
+  &__title {
+    color: var(--black-text-color);
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 37px;
+    margin: 72px 0;
+    @media (max-width: 690px) {
+      font-size: 28px;
+      margin: 55px 0;
+    }
+  }
+
+  &__list {
+    &-item {
+      padding: 96px 0;
+      max-width: 1920px;
+      margin: 0 auto;
+
+      @media (max-width: 375px) {
+        height: 214px;
+      }
+
+      &-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+    &-item:nth-child(1) {
+      background: url('../assets/tour-1.jpg') center center / 100% 100% no-repeat;
+      @media (max-width: 500px) {
+        background: url('../assets/tour-1-mob.jpg') center center / 100% 100% no-repeat;
+      }
+    }
+    &-item:nth-child(2) {
+      background: url('../assets/tour-2.jpg') center center / 100% 100% no-repeat;
+      @media (max-width: 500px) {
+        background: url('../assets/tour-2-mob.jpg') center center / 100% 100% no-repeat;
+      }
+    }
+    &-item:nth-child(3) {
+      background: url('../assets/tour-3.jpg') center center / 100% 100% no-repeat;
+      @media (max-width: 1024px) {
+        background: url('../assets/tour-3-pad.jpg') center center / 100% 100% no-repeat;
+      }
+
+      @media (max-width: 500px) {
+        background: url('../assets/tour-3-mob.jpg') center center / 100% 100% no-repeat;
+      }
+    }
+    &-item:nth-child(4) {
+      background: url('../assets/tour-4.jpg') center center / 100% 100% no-repeat;
+
+      @media (max-width: 500px) {
+        background: url('../assets/tour-4-mob.jpg') center center / 100% 100% no-repeat;
+      }
+    }
+    &-item:nth-child(5) {
+      background: url('../assets/tour-5.jpg') center center / 100% 100% no-repeat;
+      @media (max-width: 500px) {
+        background: url('../assets/tour-5-mob.jpg') center center / 100% 100% no-repeat;
+      }
+    }
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    &-time {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    @media (max-width: 690px) {
+      gap: 10px;
+    }
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+
+    @media (max-width: 690px) {
+      font-size: 18px;
+      line-height: 25px;
+      max-width: 210px;
+    }
+  }
+
+  &__time-info {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  @media (max-width: 690px) {
+    font-size: 16px;
+  }
+}

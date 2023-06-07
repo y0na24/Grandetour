@@ -1,16 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./app/styles/main.scss">
+    <link rel="preload" href="./app/fonts/SuisseIntl-Book.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="./app/fonts/SuisseIntl-Medium.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="./app/fonts/SuisseIntl-SemiBold.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="./app/styles/main.scss" />
     <title>Vite App</title>
   </head>
   <body>
-    <div id="app">
-      <div class="box">fsdafsdf</div>
+    <div class="wrapper">
+      <div class="overlay"></div>
+      <header class="header">
+        <div class="header__container container">
+          <nav class="header__nav nav">
+            <ul class="header__list nav__list">
+              <li class="nav__list-item"><a href="#">Туры</a></li>
+              <li class="nav__list-item"><a href="#">Команда</a></li>
+              <li class="nav__list-image">
+                <img class="header__nav-image" loading="lazy" src="./app/assets/logo.svg" alt="Лого" width="162" height="72" />
+              </li>
+              <li class="nav__list-item"><a href="#">Фото</a></li>
+              <li class="nav__list-item"><a href="#">Связаться</a></li>
+            </ul>
+            <img class="burger-image" src="./app/assets/logo.svg" alt="" />
+            <div class="burger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </nav>
+          <div class="header__hero hero">
+            <h1 class="hero__title">Авторские туры на Кавказ</h1>
+            <p class="hero__descr">
+              Более 20 лет мы преданы нашей страсти. Мы хорошо знакомы с каждым городом и тропой. Мы сотрудничаем с владельцами
+              отелей и ресторанов. Мы прорабатываем маршруты, чтобы подарить вам новые, насыщенные впечатления.
+            </p>
+            <ul class="hero__list">
+              <li class="hero__list-item">
+                <img
+                  class="hero__list-image"
+                  width="38"
+                  height="38"
+                  loading="lazy"
+                  src="./app/assets/hero-decor-1.svg"
+                  alt="Незабываемые впечатления"
+                />
+                <h2 class="hero__list-subtitle">Незабываемые впечатления</h2>
+                <p class="hero__list-text">Путешествие в горы никого не оставляет равнодушным и запоминается надолго!</p>
+              </li>
+              <li class="hero__list-item">
+                <img
+                  class="hero__list-image"
+                  width="38"
+                  height="38"
+                  loading="lazy"
+                  src="./app/assets/hero-decor-2.svg"
+                  alt="Кавказская кухня"
+                />
+                <h2 class="hero__list-subtitle">Кавказская кухня</h2>
+                <p class="hero__list-text">Великолепная возможность испробовать лучшие блюда кавказской кухни!</p>
+              </li>
+              <li class="hero__list-item">
+                <img
+                  class="hero__list-image"
+                  width="38"
+                  height="38"
+                  loading="lazy"
+                  src="./app/assets/hero-decor-3.svg"
+                  alt="Проверенные маршурты"
+                />
+                <h2 class="hero__list-subtitle">Проверенные маршруты</h2>
+                <p class="hero__list-text">
+                  Мы разработали маршруты, которые сохранят ваши силы и подрят максимум ярких впечатлений!
+                </p>
+              </li>
+            </ul>
+            <div class="hero__button-container">
+              <button class="button" type="button">Хочу с вами!</button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="main__tours tours">
+          <div class="tours__title-container container">
+            <h2 class="tours__title">Популярные туры</h2>
+          </div>
+          <ul class="tours__list">
+            <li class="tours__list-item">
+              <div class="container tours__list-item-container">
+                <div class="tours__left">
+                  <h3 class="tours__name">Джип-тур на Кавказ</h3>
+                  <div class="tours__left-time">
+                    <img loading="lazy" width="16" height="16" src="./app/assets/tours-time.svg" alt="Продолжительность тура" />
+                    <div class="tours__time-info">4 дня</div>
+                  </div>
+                </div>
+                <a href="#"> <img loading="lazy" width="36" height="36" src="./app/assets/tour-arrow.svg" alt="Выбрать тур" /></a>
+              </div>
+            </li>
+            <li class="tours__list-item">
+              <div class="container tours__list-item-container">
+                <div class="tours__left">
+                  <h3 class="tours__name">Домбай</h3>
+                  <div class="tours__left-time">
+                    <img loading="lazy" width="16" height="16" src="./app/assets/tours-time.svg" alt="Продолжительность тура" />
+                    <div class="tours__time-info">4 дня</div>
+                  </div>
+                </div>
+                <a href="#"> <img loading="lazy" width="36" height="36" src="./app/assets/tour-arrow.svg" alt="Выбрать тур" /></a>
+              </div>
+            </li>
+            <li class="tours__list-item">
+              <div class="container tours__list-item-container">
+                <div class="tours__left">
+                  <h3 class="tours__name">Дорога сказки</h3>
+                  <div class="tours__left-time">
+                    <img loading="lazy" width="16" height="16" src="./app/assets/tours-time.svg" alt="Продолжительность тура" />
+                    <div class="tours__time-info">3 дня</div>
+                  </div>
+                </div>
+                <a href="#"> <img loading="lazy" width="36" height="36" src="./app/assets/tour-arrow.svg" alt="Выбрать тур" /></a>
+              </div>
+            </li>
+            <li class="tours__list-item">
+              <div class="container tours__list-item-container">
+                <div class="tours__left">
+                  <h3 class="tours__name">Дикий мир Балкарий</h3>
+                  <div class="tours__left-time">
+                    <img loading="lazy" width="16" height="16" src="./app/assets/tours-time.svg" alt="Продолжительность тура" />
+                    <div class="tours__time-info">3 дня</div>
+                  </div>
+                </div>
+                <a href="#"> <img loading="lazy" width="36" height="36" src="./app/assets/tour-arrow.svg" alt="Выбрать тур" /></a>
+              </div>
+            </li>
+            <li class="tours__list-item">
+              <div class="container tours__list-item-container">
+                <div class="tours__left">
+                  <h3 class="tours__name">Путешествие в горную Ингушетию и Северную Осетию</h3>
+                  <div class="tours__left-time">
+                    <img loading="lazy" width="16" height="16" src="./app/assets/tours-time.svg" alt="Продолжительность тура" />
+                    <div class="tours__time-info">12 часов</div>
+                  </div>
+                </div>
+                <a href="#"> <img loading="lazy" width="36" height="36" src="./app/assets/tour-arrow.svg" alt="Выбрать тур" /></a>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="main__list list">
+          
+        </section>
+      </main>
     </div>
+
     <script type="module" src="/app/main.js"></script>
   </body>
 </html>

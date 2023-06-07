@@ -1,0 +1,36 @@
+.header {
+  background: url('../assets/hero-bg.jpg') center center / cover no-repeat;
+  width: 100%;
+  padding-top: 24px;
+
+  &__nav {
+    margin-bottom: 144px;
+    border-bottom: 2px solid var(--light-color);
+    &-image {
+      margin: 0 80px;
+      pointer-events: none;
+
+      @media (max-width: 1024px) {
+        margin: 0 40px;
+      }
+
+      @media (max-width: 800px) {
+        margin: 0;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      margin-bottom: 112px;
+    }
+
+    @media (max-width: 800px) {
+      margin-bottom: 80px;
+    }
+    @media (max-width: 690px) {
+    }
+  }
+
+  &__list {
+    padding-bottom: 24px;
+  }
+}
