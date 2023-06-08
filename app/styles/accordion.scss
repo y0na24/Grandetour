@@ -1,0 +1,79 @@
+.accordion__title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 56px;
+  color: var(--black-text-color);
+  margin: 72px 0;
+
+  @media (max-width: 690px) {
+    font-size: 30px;
+    line-height: 38px;
+    margin: 45px 0;
+  }
+}
+
+.ac {
+  margin-top: 8px;
+  border: 2px solid var(--black-bg-color);
+  background-color: #fff;
+  box-sizing: border-box;
+}
+.ac .ac-header {
+  margin: 0;
+  padding: 20px;
+}
+.ac .ac-trigger {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: var(--black-text-color);
+  text-align: left;
+  width: 100%;
+  display: block;
+  cursor: pointer;
+  background-color: transparent;
+  transition: color 0.25s ease;
+  position: relative;
+  text-decoration: none;
+  margin: 0;
+  border: 0;
+
+  @media (max-width: 800px) {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+.ac .ac-trigger::after {
+  content: '+';
+  text-align: center;
+  width: 15px;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  position: absolute;
+  right: 10px;
+  top: 50%;
+}
+
+.ac .ac-panel {
+  padding-left: 20px;
+  overflow: hidden;
+  transition-property: height, visibility;
+  transition-timing-function: ease;
+}
+.ac .ac-panel .ac-text {
+  font-weight: 450;
+  font-size: 16px;
+  line-height: 130%;
+  color: var(--black-text-color);
+  padding: 8px;
+  margin: 0;
+}
+.ac.js-enabled .ac-panel {
+  visibility: hidden;
+}
+.ac.is-active .ac-panel {
+  visibility: visible;
+}
+.ac.is-active > .ac-header .ac-trigger::after {
+  content: '–';
+}

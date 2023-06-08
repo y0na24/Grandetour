@@ -1,3 +1,7 @@
+import Accordion from 'accordion-js'
+
+new Accordion('.accordion-container')
+
 const burger = document.querySelector('.burger')
 const navMenu = document.querySelector('.nav__list')
 const navLinks = document.querySelectorAll('.nav__list-item')

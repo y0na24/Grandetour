@@ -11,5 +11,8 @@
   "devDependencies": {
     "sass": "^1.62.1",
     "vite": "^4.3.9"
+  },
+  "dependencies": {
+    "accordion-js": "^3.3.4"
   }
 }
