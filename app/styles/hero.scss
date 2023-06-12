@@ -1,11 +1,12 @@
 .hero {
   padding-bottom: 128px;
+  margin-bottom: 72px;
   &__title {
     font-weight: 600;
     font-size: 64px;
     line-height: 74px;
     text-align: center;
-    margin-bottom: 48px;
+    margin-bottom: 20px;
     text-transform: uppercase;
 
     @media (max-width: 1024px) {
