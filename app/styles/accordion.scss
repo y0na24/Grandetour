@@ -60,6 +60,13 @@
   transition-property: height, visibility;
   transition-timing-function: ease;
 }
+
+.ac .ac-panel .ac-text.ac-text--bold {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 130%;
+}
+
 .ac .ac-panel .ac-text {
   font-weight: 450;
   font-size: 16px;
@@ -67,7 +74,7 @@
   color: var(--black-text-color);
   padding: 8px;
   margin: 0;
-  &:last-child{
+  &:last-child {
     margin-bottom: 15px;
   }
 }
