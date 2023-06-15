@@ -14,37 +14,52 @@
   }
 
   &__list {
-    --column-count: 2;
+    --column-count: 4;
     display: grid;
     grid-auto-columns: 1fr;
     grid-template-columns: repeat(var(--column-count), 1fr);
-    gap: 24px 20px;
+    gap: 48px 20px;
 
     @media (max-width: 1024px) {
+      --column-count: 3;
+    }
+
+    @media (max-width: 800px) {
+      --column-count: 2;
+    }
+
+    @media (max-width: 600px) {
       --column-count: 1;
+      gap: 20px;
     }
   }
 
   &__founder {
     display: flex;
     gap: 22px;
-    background-color: var(--black-bg-color);
-    padding: 32px;
+
     margin-bottom: 24px;
 
     @media (max-width: 800px) {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      gap: 4px;
     }
 
     &-info {
+      padding: 24px;
+      background-color: var(--black-text-color);
       @media (max-width: 800px) {
         text-align: center;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+      }
+
+      @media (max-width: 600px) {
+        max-width: 310px;
       }
     }
 
@@ -90,9 +105,8 @@
 
   &__item {
     display: flex;
-    gap: 22px;
-    background-color: var(--black-bg-color);
-    padding: 32px;
+    flex-direction: column;
+    gap: 12px;
 
     @media (max-width: 800px) {
       flex-direction: column;
@@ -115,9 +129,10 @@
     }
 
     &-name {
-      font-weight: 500;
-      font-size: 32px;
-      line-height: 37px;
+      color: var(--black-text-color);
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 28px;
 
       @media (max-width: 690px) {
         font-size: 24px;
