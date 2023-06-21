@@ -65,15 +65,18 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 130%;
+
+  padding-left: 8px;
+  margin-bottom: 4px;
 }
 
 .ac .ac-panel .ac-text {
   font-weight: 450;
   font-size: 16px;
   line-height: 130%;
+  padding-left: 8px;
   color: var(--black-text-color);
-  padding: 8px;
-  margin: 0;
+  margin-bottom: 10px;
   &:last-child {
     margin-bottom: 15px;
   }
